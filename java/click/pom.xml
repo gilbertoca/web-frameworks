@@ -10,7 +10,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <click.version>2.5.0</click.version>
+        <click.version>2.6.0</click.version>
     </properties>
     <dependencies>
         <!-- Apache Click Core -->
@@ -40,4 +40,11 @@
             </plugin>
         </plugins>
     </build>
+<repositories>
+    <repository>
+        <id>github-click</id>
+        <url>https://github.com</url>
+    </repository>
+</repositories>
+    
 </project>

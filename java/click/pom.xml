@@ -40,11 +40,15 @@
             </plugin>
         </plugins>
     </build>
-<repositories>
-    <repository>
-        <id>github-click</id>
-        <url>https://github.com</url>
-    </repository>
-</repositories>
+ <repositories>
+        <repository>
+            <id>github-gilbertoca</id>
+            <name>GitHub gilbertoca Apache Click Packages</name>
+            <url>https://maven.pkg.github.com/gilbertoca/click</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     
 </project>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project xmlns="http://apache.org" xmlns:xsi="http://w3.org" xsi:schemaLocation="http://apache.org http://apache.org">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.benchmark</groupId>
+    <artifactId>click-benchmark</artifactId>
+    <packaging>war</packaging>
+    <version>1.0</version>
+    <name>click-benchmark</name>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <click.version>2.5.0</click.version>
+    </properties>
+    <dependencies>
+        <!-- Apache Click Core -->
+        <dependency>
+            <groupId>org.apache.click</groupId>
+            <artifactId>click</artifactId>
+            <version>${click.version}</version>
+        </dependency>
+        <!-- API de Servlet exigida pelo Click (javax.servlet) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>click-benchmark</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

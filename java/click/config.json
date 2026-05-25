@@ -1,0 +1,12 @@
+{
+  "label": "Apache Click",
+  "framework": "click",
+  "language": "java",
+  "website": "https://github.com/gilbertoca/click",
+  "port": 8080,
+  "tests": [
+    {
+      "route": "/index.htm"
+    }
+  ]
+}

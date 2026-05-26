@@ -7,6 +7,10 @@
   "tests": [
     {
       "route": "/index.htm"
+    },
+    {
+      "route": "/fortunes.htm",
+      "type": "fortune"
     }
   ]
 }
